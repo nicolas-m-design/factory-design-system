@@ -1,10 +1,14 @@
-# Foundry Design System
+# Factory Design System
 
 > A token-driven brand architecture that extracts design tokens from Figma, generates structured token files (JSON + CSS custom properties), and builds React components consuming only tokens — zero hardcoded values.
 
+## Credits & Inspiration
+
+- **Kyle Anthony Miller** ([brasshands.com](https://brasshands.com)) — Brand and design direction inspiration. His work on Factory's visual identity shaped this system's warm industrial aesthetic and orange-forward palette.
+
 ## Visual Theme & Atmosphere
 
-Foundry is warm, industrial, and modern. Inspired by Factory brand aesthetics — bold orange as the primary color, warm neutrals, and clean typography. The system feels confident and grounded, never cold or clinical.
+Factory is warm, industrial, and modern. Bold orange as the primary color, warm neutrals, and clean typography. The system feels confident and grounded, never cold or clinical.
 
 - **Mood**: Warm industrial, approachable yet professional
 - **Primary brand color**: Orange (#E8520A) — energetic, bold, distinctive
