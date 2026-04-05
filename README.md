@@ -26,7 +26,7 @@ This separation means a full rebrand (new colors, new typography) only touches t
 
 ### Foundations
 - **72-color palette** across 6 hues (orange, neutral, sand, red, green, blue) using a Radix-style 12-step scale
-- **Typography** — Founders Grotesk, 5 weights, 10-step size scale
+- **Typography** — Geist Mono, 5 weights, 10-step size scale
 - **Spacing** — strict 4px grid
 - **Elevation** — shadow system with focus ring pattern
 

@@ -141,7 +141,7 @@
   --primitive-font-weight-bold: 700;
 
   /* Font Family */
-  --primitive-font-family: 'Founders Grotesk', system-ui, sans-serif;
+  --primitive-font-family: 'Geist Mono', monospace;
 
   /* Opacity */
   --primitive-opacity-disabled: 0.5;

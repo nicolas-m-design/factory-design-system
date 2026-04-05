@@ -14,7 +14,7 @@ Factory is warm, industrial, and modern. Bold orange as the primary color, warm 
 - **Mood**: Warm industrial, approachable yet professional
 - **Primary brand color**: Orange (#E8520A) — energetic, bold, distinctive
 - **Neutral palette**: Warm-tinted grays (not blue-cool)
-- **Typography**: Founders Grotesk — humanist grotesque, 5 weights
+- **Typography**: Geist Mono — monospace, 5 weights
 - **Surfaces**: Light, layered, with subtle shadow depth
 - **Corners**: Pill-shaped buttons, soft-rounded cards
 
@@ -170,7 +170,7 @@ Scoped to `[data-brand="default"]`. All map to primitive references.
 
 ## Typography Rules
 
-**Font family**: Founders Grotesk, system-ui, sans-serif
+**Font family**: Geist Mono, system-ui, sans-serif
 
 ### Weights
 | Name | Value | Usage |
@@ -372,7 +372,7 @@ When building new components for this system:
 5. **Co-locate** — each component gets its own folder with `.tsx` + `.css`
 6. **Import CSS** in the component file — `import './Component.css'`
 7. **Accessible by default** — use `aria-label`, `aria-describedby`, `role` where appropriate
-8. **Founders Grotesk** is the only component font — JetBrains Mono is documentation only
+8. **Geist Mono** is the component font — JetBrains Mono is documentation labels only
 
 ### Token naming convention
 - Primitives: `--primitive-{category}-{value}` (e.g., `--primitive-orange-9`)
