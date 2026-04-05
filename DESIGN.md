@@ -5,6 +5,7 @@
 ## Credits & Inspiration
 
 - **Kyle Anthony Miller** ([brasshands.com](https://brasshands.com)) — Brand and design direction inspiration. His work on Factory's visual identity shaped this system's warm industrial aesthetic and orange-forward palette.
+- **Jocelyn Lin** ([jocelyn-lin.com](https://www.jocelyn-lin.com/dls-2026-case-study.html)) — Her design leadership systems case study inspired the token-driven architecture and systematic approach to bridging design and code.
 
 ## Visual Theme & Atmosphere
 
