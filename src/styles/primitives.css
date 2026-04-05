@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Primitives — Raw design values
+   Source of truth: Figma "Primitives" Variable Collection
+   ========================================================================== */
+
+:root {
+  /* Color / Orange (Primary) */
+  --primitive-orange-1: #FFFAF5;
+  --primitive-orange-2: #FFF0E5;
+  --primitive-orange-3: #FFE0C7;
+  --primitive-orange-4: #FFCEA6;
+  --primitive-orange-5: #FFBB85;
+  --primitive-orange-6: #F5A163;
+  --primitive-orange-7: #E88842;
+  --primitive-orange-8: #DA6E22;
+  --primitive-orange-9: #E8520A;
+  --primitive-orange-10: #CC4708;
+  --primitive-orange-11: #9E3706;
+  --primitive-orange-12: #672404;
+
+  /* Color / Neutral */
+  --primitive-neutral-1: #FFFFFF;
+  --primitive-neutral-2: #FAF9F8;
+  --primitive-neutral-3: #F2F0EE;
+  --primitive-neutral-4: #E9E7E4;
+  --primitive-neutral-5: #DFDDD9;
+  --primitive-neutral-6: #D2CFCB;
+  --primitive-neutral-7: #BCB8B3;
+  --primitive-neutral-8: #9E9A94;
+  --primitive-neutral-9: #7E7A74;
+  --primitive-neutral-10: #6B6760;
+  --primitive-neutral-11: #4A4740;
+  --primitive-neutral-12: #1A1A18;
+
+  /* Color / Sand */
+  --primitive-sand-1: #FDFCF9;
+  --primitive-sand-2: #F8F5EE;
+  --primitive-sand-3: #F0EBDF;
+  --primitive-sand-4: #E8E1D1;
+  --primitive-sand-5: #DFD7C4;
+  --primitive-sand-6: #D5CBB5;
+  --primitive-sand-7: #C4B89E;
+  --primitive-sand-8: #AFA388;
+  --primitive-sand-9: #9A8E72;
+  --primitive-sand-10: #857A62;
+  --primitive-sand-11: #5E5545;
+  --primitive-sand-12: #3A3328;
+
+  /* Color / Red */
+  --primitive-red-1: #FFF8F8;
+  --primitive-red-2: #FFF0F1;
+  --primitive-red-3: #FFE0E4;
+  --primitive-red-4: #FFD0D6;
+  --primitive-red-5: #FFC0C8;
+  --primitive-red-6: #F2A8B2;
+  --primitive-red-7: #E08D99;
+  --primitive-red-8: #D06F7E;
+  --primitive-red-9: #D1334A;
+  --primitive-red-10: #B82A40;
+  --primitive-red-11: #9C2236;
+  --primitive-red-12: #6E1826;
+
+  /* Color / Green */
+  --primitive-green-1: #F7FDF8;
+  --primitive-green-2: #EEFBF0;
+  --primitive-green-3: #DCFADF;
+  --primitive-green-4: #C4F2CA;
+  --primitive-green-5: #ABE8B4;
+  --primitive-green-6: #8DDA98;
+  --primitive-green-7: #6CC97A;
+  --primitive-green-8: #45B85E;
+  --primitive-green-9: #008928;
+  --primitive-green-10: #007622;
+  --primitive-green-11: #005C1A;
+  --primitive-green-12: #003D11;
+
+  /* Color / Blue */
+  --primitive-blue-1: #F8FBFF;
+  --primitive-blue-2: #F0F6FF;
+  --primitive-blue-3: #E0EDFF;
+  --primitive-blue-4: #CCE1FF;
+  --primitive-blue-5: #B7D5FF;
+  --primitive-blue-6: #9DC3F5;
+  --primitive-blue-7: #7EADEA;
+  --primitive-blue-8: #5592D8;
+  --primitive-blue-9: #0075E1;
+  --primitive-blue-10: #0066C6;
+  --primitive-blue-11: #004E99;
+  --primitive-blue-12: #002E5C;
+
+  /* Spacing (4px grid) */
+  --primitive-space-1: 4px;
+  --primitive-space-2: 8px;
+  --primitive-space-3: 12px;
+  --primitive-space-4: 16px;
+  --primitive-space-6: 24px;
+  --primitive-space-8: 32px;
+  --primitive-space-12: 48px;
+  --primitive-space-16: 64px;
+
+  /* Border Radius */
+  --primitive-radius-sm: 4px;
+  --primitive-radius-md: 8px;
+  --primitive-radius-lg: 16px;
+  --primitive-radius-full: 9999px;
+
+  /* Border Width */
+  --primitive-border-default: 1px;
+  --primitive-border-thick: 2px;
+  --primitive-border-heavy: 4px;
+
+  /* Font Size */
+  --primitive-font-size-xs: 12px;
+  --primitive-font-size-sm: 14px;
+  --primitive-font-size-base: 16px;
+  --primitive-font-size-lg: 18px;
+  --primitive-font-size-xl: 20px;
+  --primitive-font-size-2xl: 24px;
+  --primitive-font-size-3xl: 30px;
+  --primitive-font-size-4xl: 36px;
+  --primitive-font-size-5xl: 48px;
+  --primitive-font-size-6xl: 60px;
+
+  /* Line Height */
+  --primitive-line-height-xs: 16px;
+  --primitive-line-height-sm: 20px;
+  --primitive-line-height-base: 24px;
+  --primitive-line-height-lg: 28px;
+  --primitive-line-height-xl: 28px;
+  --primitive-line-height-2xl: 32px;
+  --primitive-line-height-3xl: 36px;
+  --primitive-line-height-4xl: 40px;
+  --primitive-line-height-5xl: 56px;
+  --primitive-line-height-6xl: 60px;
+
+  /* Font Weight */
+  --primitive-font-weight-light: 300;
+  --primitive-font-weight-regular: 400;
+  --primitive-font-weight-medium: 500;
+  --primitive-font-weight-semibold: 600;
+  --primitive-font-weight-bold: 700;
+
+  /* Font Family */
+  --primitive-font-family: 'Founders Grotesk', system-ui, sans-serif;
+
+  /* Opacity */
+  --primitive-opacity-disabled: 0.5;
+  --primitive-opacity-divider: 0.3;
+}

@@ -1,0 +1,70 @@
+{
+  "color": {
+    "action": {
+      "primary": { "value": "{color.orange.9}" },
+      "primary-hover": { "value": "{color.orange.10}" },
+      "on-primary": { "value": "{color.neutral.1}" }
+    },
+    "surface": {
+      "page": { "value": "{color.neutral.1}" },
+      "muted": { "value": "{color.neutral.3}" },
+      "subtle": { "value": "{color.neutral.2}" },
+      "secondary": { "value": "{color.orange.2}" },
+      "sand": { "value": "{color.sand.3}" }
+    },
+    "text": {
+      "primary": { "value": "{color.neutral.12}" },
+      "secondary": { "value": "{color.neutral.10}" },
+      "disabled": { "value": "{color.neutral.8}" },
+      "on-action": { "value": "{color.neutral.1}" },
+      "link": { "value": "{color.orange.9}" }
+    },
+    "border": {
+      "default": { "value": "{color.neutral.7}" },
+      "hover": { "value": "{color.neutral.12}" },
+      "subtle": { "value": "{color.neutral.6}" },
+      "focus": { "value": "{color.orange.9}" },
+      "error": { "value": "{color.red.9}" }
+    },
+    "feedback": {
+      "success": { "value": "{color.green.9}" },
+      "success-surface": { "value": "{color.green.2}" },
+      "attention": { "value": "{color.orange.9}" },
+      "attention-surface": { "value": "{color.orange.2}" },
+      "error": { "value": "{color.red.9}" },
+      "error-surface": { "value": "{color.red.2}" },
+      "info": { "value": "{color.blue.9}" },
+      "info-surface": { "value": "{color.blue.2}" }
+    }
+  },
+  "radius": {
+    "button": { "value": "{radius.sm}" },
+    "input": { "value": "{radius.sm}" },
+    "card": { "value": "{radius.md}" },
+    "tag": { "value": "{radius.full}" }
+  },
+  "space": {
+    "inline": {
+      "tight": { "value": "{space.1}" },
+      "default": { "value": "{space.2}" },
+      "loose": { "value": "{space.4}" }
+    },
+    "stack": {
+      "tight": { "value": "{space.2}" },
+      "default": { "value": "{space.4}" },
+      "loose": { "value": "{space.6}" }
+    },
+    "inset": {
+      "tight": { "value": "{space.2}" },
+      "default": { "value": "{space.4}" },
+      "loose": { "value": "{space.6}" }
+    },
+    "section": { "value": "{space.12}" },
+    "page": { "value": "{space.16}" }
+  },
+  "shadow": {
+    "focus": { "value": "0 0 0 3px #E8520A" },
+    "focus-inset": { "value": "0 0 0 2px #FFFFFF" },
+    "elevation-1": { "value": "0 2px 8px rgba(26, 26, 24, 0.15)" }
+  }
+}

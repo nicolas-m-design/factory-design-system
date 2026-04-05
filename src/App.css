@@ -1,0 +1,133 @@
+.demo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-page) var(--space-inset-loose);
+  font-family: var(--primitive-font-family);
+}
+
+.demo__header {
+  margin-bottom: var(--space-section);
+}
+
+.demo__title {
+  margin: 0;
+  font-size: var(--primitive-font-size-5xl);
+  font-weight: var(--primitive-font-weight-bold);
+  line-height: var(--primitive-line-height-5xl);
+  color: var(--color-text-primary);
+}
+
+.demo__subtitle {
+  margin: var(--space-stack-tight) 0 0;
+  font-size: var(--primitive-font-size-lg);
+  font-weight: var(--primitive-font-weight-light);
+  line-height: var(--primitive-line-height-lg);
+  color: var(--color-text-secondary);
+}
+
+.demo__section {
+  margin-bottom: var(--space-section);
+}
+
+.demo__section-title {
+  margin: 0 0 var(--space-stack-loose);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--primitive-font-size-lg);
+  font-weight: var(--primitive-font-weight-medium);
+  line-height: normal;
+  color: var(--color-text-primary);
+  padding-bottom: var(--space-stack-tight);
+  border-bottom: var(--primitive-border-default) solid var(--color-text-primary);
+}
+
+.demo__group {
+  margin-bottom: var(--space-stack-loose);
+}
+
+.demo__group-title {
+  margin: 0 0 var(--space-stack-tight);
+  font-size: var(--primitive-font-size-sm);
+  font-weight: var(--primitive-font-weight-regular);
+  line-height: var(--primitive-line-height-sm);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.demo__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-inline-default);
+}
+
+.demo__card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-stack-loose);
+}
+
+.demo__input-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-stack-loose);
+}
+
+.demo__alert-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-stack-default);
+}
+
+/* Color palette */
+.palette {
+  display: flex;
+  flex-direction: column;
+  gap: var(--primitive-space-8);
+}
+
+.palette__category {
+  display: flex;
+  flex-direction: column;
+  gap: var(--primitive-space-4);
+}
+
+.palette__category-label {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--primitive-font-size-base);
+  font-weight: var(--primitive-font-weight-medium);
+  line-height: normal;
+  color: var(--color-action-primary);
+}
+
+.palette__row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.palette__swatch {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.palette__swatch-name {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--primitive-font-size-sm);
+  font-weight: var(--primitive-font-weight-bold);
+  line-height: normal;
+  color: var(--color-text-primary);
+}
+
+.palette__swatch-color {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.palette__swatch-color--bordered {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,144 @@
+{
+  "color": {
+    "orange": {
+      "1": { "value": "#FFFAF5" },
+      "2": { "value": "#FFF0E5" },
+      "3": { "value": "#FFE0C7" },
+      "4": { "value": "#FFCEA6" },
+      "5": { "value": "#FFBB85" },
+      "6": { "value": "#F5A163" },
+      "7": { "value": "#E88842" },
+      "8": { "value": "#DA6E22" },
+      "9": { "value": "#E8520A" },
+      "10": { "value": "#CC4708" },
+      "11": { "value": "#9E3706" },
+      "12": { "value": "#672404" }
+    },
+    "neutral": {
+      "1": { "value": "#FFFFFF" },
+      "2": { "value": "#FAF9F8" },
+      "3": { "value": "#F2F0EE" },
+      "4": { "value": "#E9E7E4" },
+      "5": { "value": "#DFDDD9" },
+      "6": { "value": "#D2CFCB" },
+      "7": { "value": "#BCB8B3" },
+      "8": { "value": "#9E9A94" },
+      "9": { "value": "#7E7A74" },
+      "10": { "value": "#6B6760" },
+      "11": { "value": "#4A4740" },
+      "12": { "value": "#1A1A18" }
+    },
+    "red": {
+      "1": { "value": "#FFF8F8" },
+      "2": { "value": "#FFF0F1" },
+      "3": { "value": "#FFE0E4" },
+      "4": { "value": "#FFD0D6" },
+      "5": { "value": "#FFC0C8" },
+      "6": { "value": "#F2A8B2" },
+      "7": { "value": "#E08D99" },
+      "8": { "value": "#D06F7E" },
+      "9": { "value": "#D1334A" },
+      "10": { "value": "#B82A40" },
+      "11": { "value": "#9C2236" },
+      "12": { "value": "#6E1826" }
+    },
+    "green": {
+      "1": { "value": "#F7FDF8" },
+      "2": { "value": "#EEFBF0" },
+      "3": { "value": "#DCFADF" },
+      "4": { "value": "#C4F2CA" },
+      "5": { "value": "#ABE8B4" },
+      "6": { "value": "#8DDA98" },
+      "7": { "value": "#6CC97A" },
+      "8": { "value": "#45B85E" },
+      "9": { "value": "#008928" },
+      "10": { "value": "#007622" },
+      "11": { "value": "#005C1A" },
+      "12": { "value": "#003D11" }
+    },
+    "sand": {
+      "1": { "value": "#FDFCF9" },
+      "2": { "value": "#F8F5EE" },
+      "3": { "value": "#F0EBDF" },
+      "4": { "value": "#E8E1D1" },
+      "5": { "value": "#DFD7C4" },
+      "6": { "value": "#D5CBB5" },
+      "7": { "value": "#C4B89E" },
+      "8": { "value": "#AFA388" },
+      "9": { "value": "#9A8E72" },
+      "10": { "value": "#857A62" },
+      "11": { "value": "#5E5545" },
+      "12": { "value": "#3A3328" }
+    },
+    "blue": {
+      "1": { "value": "#F8FBFF" },
+      "2": { "value": "#F0F6FF" },
+      "3": { "value": "#E0EDFF" },
+      "4": { "value": "#CCE1FF" },
+      "5": { "value": "#B7D5FF" },
+      "6": { "value": "#9DC3F5" },
+      "7": { "value": "#7EADEA" },
+      "8": { "value": "#5592D8" },
+      "9": { "value": "#0075E1" },
+      "10": { "value": "#0066C6" },
+      "11": { "value": "#004E99" },
+      "12": { "value": "#002E5C" }
+    }
+  },
+  "space": {
+    "1": { "value": "4px" },
+    "2": { "value": "8px" },
+    "3": { "value": "12px" },
+    "4": { "value": "16px" },
+    "6": { "value": "24px" },
+    "8": { "value": "32px" },
+    "12": { "value": "48px" },
+    "16": { "value": "64px" }
+  },
+  "radius": {
+    "sm": { "value": "4px" },
+    "md": { "value": "8px" },
+    "lg": { "value": "16px" },
+    "full": { "value": "9999px" }
+  },
+  "border": {
+    "default": { "value": "1px" },
+    "thick": { "value": "2px" },
+    "heavy": { "value": "4px" }
+  },
+  "fontSize": {
+    "xs": { "value": "12px" },
+    "sm": { "value": "14px" },
+    "base": { "value": "16px" },
+    "lg": { "value": "18px" },
+    "xl": { "value": "20px" },
+    "2xl": { "value": "24px" },
+    "3xl": { "value": "30px" },
+    "4xl": { "value": "36px" },
+    "5xl": { "value": "48px" },
+    "6xl": { "value": "60px" }
+  },
+  "lineHeight": {
+    "xs": { "value": "16px" },
+    "sm": { "value": "20px" },
+    "base": { "value": "24px" },
+    "lg": { "value": "28px" },
+    "xl": { "value": "28px" },
+    "2xl": { "value": "32px" },
+    "3xl": { "value": "36px" },
+    "4xl": { "value": "40px" },
+    "5xl": { "value": "56px" },
+    "6xl": { "value": "60px" }
+  },
+  "fontWeight": {
+    "light": { "value": 300 },
+    "regular": { "value": 400 },
+    "medium": { "value": 500 },
+    "semibold": { "value": 600 },
+    "bold": { "value": 700 }
+  },
+  "opacity": {
+    "disabled": { "value": 0.5 },
+    "divider": { "value": 0.3 }
+  }
+}

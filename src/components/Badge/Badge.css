@@ -1,0 +1,89 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primitive-font-family);
+  font-weight: var(--primitive-font-weight-medium);
+  border-radius: var(--radius-tag);
+  white-space: nowrap;
+  line-height: 0;
+}
+
+/* States */
+.badge--new {
+  background: var(--color-action-primary);
+  color: var(--color-action-on-primary);
+}
+
+.badge--informational {
+  background: var(--color-surface-page);
+  color: var(--color-text-primary);
+}
+
+/* Sizes — dot (no count) */
+.badge--sm.badge--dot {
+  width: 23px;
+  height: 23px;
+}
+
+.badge--md.badge--dot {
+  width: 31px;
+  height: 31px;
+}
+
+.badge--lg.badge--dot {
+  width: 40px;
+  height: 40px;
+}
+
+/* Sizes — single digit */
+.badge--sm.badge--single {
+  width: 23px;
+  height: 23px;
+  font-size: var(--primitive-font-size-sm);
+}
+
+.badge--md.badge--single {
+  width: 31px;
+  height: 31px;
+  font-size: var(--primitive-font-size-lg);
+}
+
+.badge--lg.badge--single {
+  width: 40px;
+  height: 40px;
+  font-size: var(--primitive-font-size-2xl);
+}
+
+/* Sizes — multiple digits */
+.badge--sm.badge--multiple {
+  height: 23px;
+  padding: 0 var(--primitive-space-1);
+  font-size: var(--primitive-font-size-sm);
+}
+
+.badge--md.badge--multiple {
+  height: 31px;
+  padding: 0 10px;
+  font-size: var(--primitive-font-size-lg);
+}
+
+.badge--lg.badge--multiple {
+  height: 40px;
+  padding: 0 10px;
+  font-size: var(--primitive-font-size-2xl);
+}
+
+/* Count label */
+.badge__count {
+  pointer-events: none;
+}
+
+/* Dot indicator for overflow */
+.badge__dot {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
