@@ -6,6 +6,8 @@ interface CardProps {
   description?: string
   linkLabel?: string
   linkHref?: string
+  interactive?: boolean
+  imageRatio?: 'square' | 'landscape'
 }
 
 export function Card({
@@ -14,21 +16,34 @@ export function Card({
   description,
   linkLabel,
   linkHref = '#',
+  interactive = false,
+  imageRatio = 'square',
 }: CardProps) {
-  return (
-    <article className="card">
-      {image && (
-        <img className="card__image" src={image} alt="" />
-      )}
+  const hasText = title || description
+  const className = ['card', interactive ? 'card--interactive' : ''].filter(Boolean).join(' ')
+
+  const body = (
+    <>
+      {image && <img alt="" className={`card__image card__image--${imageRatio}`} src={image} />}
       <div className="card__body">
-        {title && <h3 className="card__title">{title}</h3>}
-        {description && <p className="card__description">{description}</p>}
-        {linkLabel && (
-          <a className="card__link" href={linkHref}>
-            {linkLabel}
-          </a>
+        {hasText && (
+          <div className="card__text">
+            {title && <h3 className="card__title">{title}</h3>}
+            {description && <p className="card__description">{description}</p>}
+          </div>
         )}
+        {linkLabel && <span className="card__cta">{linkLabel}</span>}
       </div>
-    </article>
+    </>
   )
+
+  if (interactive) {
+    return (
+      <a className={className} href={linkHref}>
+        {body}
+      </a>
+    )
+  }
+
+  return <article className={className}>{body}</article>
 }

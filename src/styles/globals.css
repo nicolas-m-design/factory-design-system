@@ -1,23 +1,36 @@
-/* ==========================================================================
-   Global Stylesheet — Import order matters
-   Layer 1 (Primitives) must load before Layer 2 (Semantics)
-   ========================================================================== */
+@import '../generated/primitives.css';
+@import '../generated/semantic.css';
 
-@import './primitives.css';
-@import './semantic.css';
-
-/* Reset & base */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  font-family: var(--primitive-font-family-base);
+}
+
 body {
   margin: 0;
-  font-family: var(--primitive-font-family);
-  background: var(--primitive-neutral-3);
-  color: var(--color-text-primary);
+  font-family: var(--primitive-font-family-base);
+  background: var(--primitive-color-ink-2);
+  color: var(--primitive-color-ink-12);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
 }

@@ -1,0 +1,37 @@
+.field {
+  display: grid;
+  gap: var(--primitive-space-2);
+}
+
+.field--disabled .field__label,
+.field--disabled .field__description {
+  color: var(--color-text-muted);
+}
+
+.field__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--primitive-space-1);
+  font-family: var(--primitive-font-family-base);
+  font-size: var(--typography-label-size);
+  line-height: var(--typography-label-line-height);
+  font-weight: var(--typography-label-weight);
+  color: var(--color-text-primary);
+}
+
+.field__required {
+  color: var(--color-text-brand);
+}
+
+.field__description {
+  margin: 0;
+  font-family: var(--primitive-font-family-base);
+  font-size: var(--typography-caption-size);
+  line-height: var(--typography-caption-line-height);
+  font-weight: var(--typography-caption-weight);
+  color: var(--color-text-secondary);
+}
+
+.field__description--error {
+  color: var(--color-feedback-error-text);
+}

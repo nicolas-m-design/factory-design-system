@@ -1,0 +1,92 @@
+.tabs {
+  display: grid;
+  gap: var(--primitive-space-4);
+}
+
+.tabs__list {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--primitive-space-1);
+  border-bottom: var(--border-width-control) solid var(--color-border-subtle);
+  overflow-x: auto;
+}
+
+.tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--primitive-space-2);
+  min-width: var(--layout-touch-target-min);
+  padding: var(--primitive-space-3) var(--primitive-space-4);
+  font-family: var(--primitive-font-family-base);
+  font-size: var(--primitive-font-size-base);
+  line-height: var(--primitive-line-height-base);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  background: none;
+  overflow: clip;
+}
+
+.tab--default {
+  font-weight: var(--primitive-font-weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.tab--active {
+  font-weight: var(--primitive-font-weight-semibold);
+  color: var(--color-text-brand);
+}
+
+.tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: var(--primitive-space-2);
+  right: var(--primitive-space-2);
+  height: 0;
+  background: transparent;
+}
+
+.tab--active::after {
+  height: 3px;
+  background: var(--color-action-primary);
+}
+
+.tab:focus-visible {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+}
+
+.tab--default:hover {
+  color: var(--color-text-primary);
+}
+
+.tab--disabled {
+  opacity: var(--opacity-disabled);
+  cursor: not-allowed;
+}
+
+.tab__icon {
+  color: currentColor;
+}
+
+.tab__count {
+  min-width: 22px;
+  padding: 0 var(--primitive-space-1);
+  border: var(--border-width-control) solid var(--color-border-subtle);
+  background: var(--color-surface-panel-muted);
+  font-size: var(--typography-caption-size);
+  line-height: var(--typography-caption-line-height);
+  font-weight: var(--typography-caption-weight);
+}
+
+.tab--active .tab__count {
+  background: var(--color-action-secondary-surface);
+}
+
+.tabs__panel {
+  padding-top: var(--primitive-space-2);
+}
