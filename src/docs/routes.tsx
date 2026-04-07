@@ -247,6 +247,55 @@ function OverviewPage() {
         </div>
       </section>
 
+      <section className="spec-section">
+        <div className="spec-section__header">
+          <h2 className="spec-section__title">Documentation Sources</h2>
+          <p className="spec-section__copy">These authored documents define policy, handoff rules, and component contracts. The routed spec pages render the system; they do not replace the underlying authored guidance.</p>
+        </div>
+        <div className="overview-grid">
+          <section className="spec-card">
+            <p className="spec-card__eyebrow">System Policy</p>
+            <h3 className="spec-card__title">DESIGN.md</h3>
+            <p className="spec-card__copy">Canonical design-language rules, route contract, artifact governance, and token policy.</p>
+            <p className="spec-card__copy">
+              <a className="spec-inline-link" href="https://github.com/nicolas-m-design/factory-design-system/blob/main/DESIGN.md" rel="noreferrer" target="_blank">
+                Open DESIGN.md
+              </a>
+            </p>
+          </section>
+          <section className="spec-card">
+            <p className="spec-card__eyebrow">Component Contracts</p>
+            <h3 className="spec-card__title">component-specs.md</h3>
+            <p className="spec-card__copy">Normalized anatomy, states, behavior, placement, accessibility, and responsive-stress rules for each component family.</p>
+            <p className="spec-card__copy">
+              <a className="spec-inline-link" href="https://github.com/nicolas-m-design/factory-design-system/blob/main/docs/component-specs.md" rel="noreferrer" target="_blank">
+                Open component-specs.md
+              </a>
+            </p>
+          </section>
+          <section className="spec-card">
+            <p className="spec-card__eyebrow">Figma Workflow</p>
+            <h3 className="spec-card__title">figma-edit-checklist.md</h3>
+            <p className="spec-card__copy">Execution checklist for token edits, component updates, page annotation rules, and responsive validation in Figma.</p>
+            <p className="spec-card__copy">
+              <a className="spec-inline-link" href="https://github.com/nicolas-m-design/factory-design-system/blob/main/docs/figma-edit-checklist.md" rel="noreferrer" target="_blank">
+                Open figma-edit-checklist.md
+              </a>
+            </p>
+          </section>
+          <section className="spec-card">
+            <p className="spec-card__eyebrow">Icon Policy</p>
+            <h3 className="spec-card__title">icon-guidelines.md</h3>
+            <p className="spec-card__copy">Approved icon subset, semantic sizing, color rules, placement rules, and growth policy for expanding the set.</p>
+            <p className="spec-card__copy">
+              <a className="spec-inline-link" href="https://github.com/nicolas-m-design/factory-design-system/blob/main/docs/icon-guidelines.md" rel="noreferrer" target="_blank">
+                Open icon-guidelines.md
+              </a>
+            </p>
+          </section>
+        </div>
+      </section>
+
       <AccessibilityNotes
         items={[
           'The system baseline is semantic-first: components should consume semantic tokens, not ad hoc values or primitive colors directly.',
