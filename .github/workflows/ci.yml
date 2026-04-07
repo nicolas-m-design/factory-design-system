@@ -29,7 +29,7 @@ jobs:
       - name: Detect test script
         id: test-script
         run: |
-          node --input-type=module -e "import fs from 'node:fs'; const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8')); process.stdout.write(\`present=${pkg.scripts && pkg.scripts.test ? 'true' : 'false'}\n\`)" >> \"$GITHUB_OUTPUT\"
+          node --input-type=module -e 'import fs from "node:fs"; const pkg = JSON.parse(fs.readFileSync("package.json", "utf8")); console.log(pkg.scripts && pkg.scripts.test ? "present=true" : "present=false")' >> "$GITHUB_OUTPUT"
 
       - name: Test
         if: steps.test-script.outputs.present == 'true'
