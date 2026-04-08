@@ -2,8 +2,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
-  border: var(--border-width-control) solid transparent;
+  border: var(--border-width-control) solid var(--color-border-subtle);
+  background: var(--color-surface-page);
+  color: var(--color-text-primary);
   font-family: var(--primitive-font-family-base);
   font-weight: var(--primitive-font-weight-medium);
   white-space: nowrap;
@@ -16,69 +17,64 @@
   border-color: var(--color-action-primary);
 }
 
-.badge--neutral {
-  background: var(--color-feedback-neutral-surface);
-  color: var(--color-feedback-neutral-text);
-  border-color: var(--color-feedback-neutral-border);
-}
-
 .badge--info {
-  background: var(--color-feedback-info-surface);
-  color: var(--color-feedback-info-text);
-  border-color: var(--color-feedback-info-border);
-}
-
-.badge--success {
-  background: var(--color-feedback-success-surface);
-  color: var(--color-feedback-success-text);
-  border-color: var(--color-feedback-success-border);
-}
-
-.badge--attention {
-  background: var(--color-feedback-attention-surface);
-  color: var(--color-feedback-attention-text);
-  border-color: var(--color-feedback-attention-border);
-}
-
-.badge--error {
-  background: var(--color-feedback-error-surface);
-  color: var(--color-feedback-error-text);
-  border-color: var(--color-feedback-error-border);
+  background: var(--color-surface-page);
+  color: var(--color-text-primary);
+  border-color: var(--color-border-subtle);
 }
 
 .badge--lg.badge--single,
 .badge--lg.badge--overflow {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   font-size: var(--primitive-font-size-lg);
+  line-height: var(--primitive-line-height-lg);
 }
 
 .badge--lg.badge--multiple {
-  height: 36px;
+  min-width: 67px;
+  height: 40px;
   padding: 0 10px;
   font-size: var(--primitive-font-size-lg);
+  line-height: var(--primitive-line-height-lg);
 }
 
 .badge--md.badge--single,
 .badge--md.badge--overflow {
   width: 24px;
   height: 24px;
+  padding: 0;
   font-size: var(--primitive-font-size-sm);
+  line-height: var(--primitive-line-height-sm);
 }
 
 .badge--md.badge--multiple {
+  min-width: 55px;
   height: 24px;
   padding: 0 10px;
   font-size: var(--primitive-font-size-sm);
+  line-height: var(--primitive-line-height-sm);
 }
 
 .badge__count {
   pointer-events: none;
+  display: block;
+  line-height: inherit;
 }
 
 .badge__dot {
   display: block;
+  border-radius: 9999px;
+  background: currentColor;
+}
+
+.badge--lg .badge__dot {
+  width: 8px;
+  height: 8px;
+}
+
+.badge--md .badge__dot {
   width: 6px;
   height: 6px;
-  background: currentColor;
 }

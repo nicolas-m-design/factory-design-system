@@ -1,7 +1,7 @@
 import './Badge.css'
 
 type BadgeSize = 'md' | 'lg'
-type BadgeTone = 'brand' | 'neutral' | 'info' | 'success' | 'attention' | 'error'
+type BadgeTone = 'brand' | 'info'
 
 interface BadgeProps {
   count?: number
@@ -12,21 +12,17 @@ interface BadgeProps {
 
 const toneLabels: Record<BadgeTone, string> = {
   brand: 'brand',
-  neutral: 'neutral',
   info: 'informational',
-  success: 'success',
-  attention: 'attention',
-  error: 'error',
 }
 
 export function Badge({
   count,
   size = 'md',
   tone = 'brand',
-  max = 99,
+  max,
 }: BadgeProps) {
   const hasCount = count !== undefined
-  const overflow = hasCount && count > max
+  const overflow = hasCount && max !== undefined && count > max
   const label = overflow ? `${max}+` : count
   const digitClass = !hasCount
     ? 'badge--overflow'

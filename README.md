@@ -80,7 +80,7 @@ Every foundation and component route includes:
   - `tone: neutral | info | success | attention | error`
   - `action`, `dismissible`, `showIcon`
 - `Badge`
-  - `tone: brand | neutral | info | success | attention | error`
+  - `tone: brand | info`
   - `max` for explicit overflow handling
 - `Link`
   - `appearance: default | inverse`
@@ -92,8 +92,10 @@ Every foundation and component route includes:
 
 ```bash
 npm run dev
+npm run check
 npm run build
 npm run test
+npm run typecheck
 npm run generate:tokens
 ```
 
@@ -111,3 +113,4 @@ The repo includes:
 - Generated artifacts live in `src/generated/` and are committed as deterministic build outputs.
 - The app uses `HashRouter` so the docs routes work on static hosting without server-side rewrite rules.
 - `DESIGN.md` contains the higher-level system spec and implementation rules.
+- `Badge` keeps a deliberately small public surface: `brand` maps to the filled `New` state and `info` maps to the outlined `Informational` state.

@@ -23,14 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Check
+        run: npm run check
+
       - name: Build
         run: npm run build
-
-      - name: Detect test script
-        id: test-script
-        run: |
-          node --input-type=module -e 'import fs from "node:fs"; const pkg = JSON.parse(fs.readFileSync("package.json", "utf8")); console.log(pkg.scripts && pkg.scripts.test ? "present=true" : "present=false")' >> "$GITHUB_OUTPUT"
-
-      - name: Test
-        if: steps.test-script.outputs.present == 'true'
-        run: npm run test

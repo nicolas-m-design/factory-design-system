@@ -213,11 +213,7 @@ When a field is not relevant, mark it `Not applicable` rather than omitting it.
   - dot or count
 - Variants:
   - `brand`
-  - `neutral`
   - `info`
-  - `success`
-  - `attention`
-  - `error`
 - Sizes:
   - `md`
   - `lg`
@@ -234,9 +230,9 @@ When a field is not relevant, mark it `Not applicable` rather than omitting it.
   - place near the object or control the count refers to
 - Semantic Intent:
   - only `brand` uses action semantics
-  - neutral/info/status tones come from semantic feedback tokens
+  - `info` stays structural and neutral rather than becoming a feedback-color family
 - Implementation Notes:
-  - avoid action-token fills for neutral or informational badges
+  - avoid action-token fills for informational badges
 - Responsive Failure Modes:
   - overflow must stay explicit and predictable in dense layouts
   - badge placement cannot obscure the parent control or label

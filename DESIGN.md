@@ -222,16 +222,13 @@ Behavior requirements:
 
 - Tones:
   - `brand`
-  - `neutral`
   - `info`
-  - `success`
-  - `attention`
-  - `error`
 - `max` controls overflow formatting
 
 Badge semantics rule:
 
-- neutral and informational badges must not use action tokens as their fill
+- `brand` is the filled `New` state
+- `info` is the outlined `Informational` state and must not use action tokens as its fill
 
 ### Alert
 

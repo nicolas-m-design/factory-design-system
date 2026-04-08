@@ -18,4 +18,12 @@ describe('docs routes', () => {
       }
     })
   }
+
+  it('keeps the badge docs aligned with the two-tone contract', () => {
+    window.location.hash = '#/components/badges'
+    render(<App />)
+
+    expect(screen.getByText(/Keep the badge system to two states/i)).toBeInTheDocument()
+    expect(screen.getByText('Informational')).toBeInTheDocument()
+  })
 })

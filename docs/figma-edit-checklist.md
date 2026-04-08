@@ -131,7 +131,7 @@ If any of those are missing from the Figma page, update the page annotations bef
 ### Badges
 
 - Brand is the only action-toned badge.
-- Neutral and info stay semantic, not action-colored.
+- Informational stays structural, not action-colored.
 - `max` overflow behavior is documented.
 - Placement relative to parent controls or labels is explicit.
 
