@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: './',
+  base: '/experiments/token-brand-system/',
   plugins: [react()],
   test: {
     environment: 'jsdom',
