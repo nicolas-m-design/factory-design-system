@@ -10,6 +10,13 @@ Factory Design System is a token-driven spec app built around one canonical visu
 
 The repo is intentionally structured so the token inputs are the single source of truth and the spec site is the visible expression of those tokens.
 
+## Collaboration Source Of Truth
+
+- The repo is canonical for accepted design-system changes.
+- Figma may diverge only in `WIP` exploration areas.
+- Published Figma variables and components must match `main`.
+- Canonical Figma changes require a matching repo PR.
+
 ## Source of Truth
 
 Only these files define token values and aliases:

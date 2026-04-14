@@ -1,0 +1,9 @@
+# Replace or add a second maintainer before enabling required CODEOWNERS review.
+
+* @nicolas-m-design
+
+/DESIGN.md @nicolas-m-design
+/docs/ @nicolas-m-design
+/src/docs/ @nicolas-m-design
+/src/components/ @nicolas-m-design
+/src/tokens/ @nicolas-m-design
