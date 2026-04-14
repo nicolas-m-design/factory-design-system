@@ -9,6 +9,40 @@ This file is not the source of truth for token values. It is the execution check
 - `DESIGN.md`
 - `docs/component-specs.md`
 
+## File Structure Rules
+
+Keep one shared file with these fixed page roles:
+
+- `00 Start Here`
+- `10 Foundations`
+- `20 Components`
+- `90 WIP`
+- `99 Archive`
+
+Use these rules when editing:
+
+- `10 Foundations` and `20 Components` are canonical.
+- `90 WIP` is the only page where exploratory work may diverge from the repo.
+- Publish variables and components only from canonical pages.
+- Do not publish from `90 WIP`.
+- Move retired or superseded reference content into `99 Archive`.
+
+## Start Here Page
+
+Add a `00 Start Here` page before widening contributor access.
+
+That page should include:
+
+- the repo link
+- the preview link
+- the canonical docs to consult first
+- the fixed page roles above
+- the rule that accepted changes land in git first
+- the rule that every canonical Figma change needs a matching repo PR
+- the naming rules from this checklist
+
+See [designer-workflow.md](designer-workflow.md) for the exact repo↔Figma handshake.
+
 ## Before Editing
 
 - Confirm the change belongs in the system, not just a one-off screen.
@@ -23,6 +57,17 @@ This file is not the source of truth for token values. It is the execution check
   - orange + ink as the brand language
   - blue reserved for informational semantics
   - zero radius everywhere
+- Normalize legacy labels such as `Primary-hover`, `On-action`, and `Info-surface` before inviting broad contributor edits on canonical pages.
+
+## Canonical Workflow Rule
+
+When a designer changes a token or component:
+
+1. Explore in `90 WIP`.
+2. Update the repo contract in the matching PR.
+3. Merge the PR.
+4. Apply the accepted state to the canonical Figma page.
+5. Publish only from the canonical page if publishing is required.
 
 ## Token Sync Checklist
 

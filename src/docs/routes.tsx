@@ -1352,23 +1352,26 @@ function TabsPage() {
 }
 
 function BadgesPage() {
-  const tones = ['brand', 'neutral', 'info', 'success', 'attention', 'error'] as const
+  const tones = [
+    { label: 'Brand', tone: 'brand' as const },
+    { label: 'Informational', tone: 'info' as const },
+  ]
 
   return (
     <SpecPageLayout
       eyebrow="Components"
-      lede="Badges now use explicit semantic tones and an explicit max overflow rule so neutral and informational badges stop borrowing action tokens."
+      lede="Keep the badge system to two states and an explicit max overflow rule so informational badges stay structural instead of borrowing action fills."
       title="Badges"
     >
       <section className="spec-section">
         <div className="spec-section__header">
           <h2 className="spec-section__title">Tone Gallery</h2>
-          <p className="spec-section__copy">Brand is the only action-toned badge. Every other tone comes from feedback semantics.</p>
+          <p className="spec-section__copy">Brand is the only action-toned badge. Informational stays structural and neutral.</p>
         </div>
         <div className="spec-grid spec-grid--3">
-          {tones.map(tone => (
+          {tones.map(({ label, tone }) => (
             <section className="spec-card" key={tone}>
-              <h3 className="spec-card__title">{tone}</h3>
+              <h3 className="spec-card__title">{label}</h3>
               <div className="example-row">
                 <Badge tone={tone} />
                 <Badge count={5} tone={tone} />
@@ -1385,7 +1388,7 @@ function BadgesPage() {
             state: 'Dot',
             description: 'Dot badges signal presence without numeric detail.',
             tokens: ['--border-width-control'],
-            preview: <Badge tone="neutral" />,
+            preview: <Badge tone="info" />,
           },
           {
             state: 'Count',
@@ -1397,15 +1400,15 @@ function BadgesPage() {
             state: 'Overflow',
             description: 'Overflow is explicit through `max`, which keeps layout predictable and avoids oversized pills.',
             tokens: ['--border-width-control'],
-            preview: <Badge count={120} max={99} tone="attention" />,
+            preview: <Badge count={120} max={99} tone="brand" />,
           },
           {
             state: 'Placement',
             description: 'Use badges as supporting metadata near controls, tabs, or navigation entries rather than as primary UI.',
-            tokens: ['--color-feedback-neutral-surface'],
+            tokens: ['--color-surface-page'],
             preview: (
               <div className="example-row">
-                <span className="placement-chip">Inbox <Badge count={9} tone="neutral" /></span>
+                <span className="placement-chip">Inbox <Badge count={9} tone="info" /></span>
                 <span className="placement-chip">Updates <Badge tone="info" /></span>
               </div>
             ),
